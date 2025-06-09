@@ -16,6 +16,10 @@ function App() {
     setTodo({description: '', date: '', status: ''});
   }
 
+  const clearTodos = () => {
+    setTodos([]);
+  }
+
   return (
     <>
       <h3>My Todolist</h3>
@@ -23,6 +27,7 @@ function App() {
       <input placeholder="Date" name="date" value={todo.date} onChange={inputChanged}/>
       <input placeholder="Status" name="status" value={todo.status} onChange={inputChanged}/>
       <button onClick={addTodo}>Add</button>
+      <button onClick={clearTodos}>Clear</button> {/* <- New Clear Button */}
       <table>
         <tbody>
         {
