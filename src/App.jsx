@@ -15,7 +15,7 @@ function App() {
     setTodos([...todos, todo]);
     setTodo({description: '', date: '', status: ''});
   }
-
+  // Exercise 1 Todo list is Cleared by this function
   const clearTodos = () => {
     setTodos([]);
   }
@@ -27,7 +27,8 @@ function App() {
       <input placeholder="Date" name="date" value={todo.date} onChange={inputChanged}/>
       <input placeholder="Status" name="status" value={todo.status} onChange={inputChanged}/>
       <button onClick={addTodo}>Add</button>
-      <button onClick={clearTodos}>Clear</button> {/* <- New Clear Button */}
+      <button onClick={clearTodos}>Clear</button> {/* Exercise 1 Clear Button */}
+      
       <table>
         <tbody>
         {
