@@ -15,7 +15,7 @@ function App() {
     setTodos([...todos, todo]);
     setTodo({description: '', date: '', status: ''});
   }
-  // Exercise 1 Todo list is Cleared by this function
+  /// Exercise 1 Todo list is Cleared by this function
   const clearTodos = () => {
     setTodos([]);
   }
